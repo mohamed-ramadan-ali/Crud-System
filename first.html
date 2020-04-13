@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+ <H1 class="text-center">CRUD System </H1>
+        <div class="container py-5">
+
+        
+
+            <label>productName :</label>
+            <input placeholder="product Name" type="text" id="productNameInp" name="" class="form-control mb-3">
+    
+            <label>productPrice :</label>
+            <input placeholder="product Price" type="number" id="productPriceInp" name="" class="form-control mb-3">
+    
+            
+            <label>productCategory :</label>
+            <input placeholder="product Category" type="text" id="productCategoryInp" name="" class="form-control mb-3">
+    
+            <label>productDesc :</label>
+            <textarea placeholder="product Description" type="text" id="productDescInp" name="" class="form-control mb-3">
+                </textarea>
+    
+    <div id="divBtn">
+                <button id="addBtn" onclick="addProduct();" class="btn btn-info float-right">add product</button>
+            </div>
+            </div>
+    
+
+        <div class="container">
+            <div class="w-50 m-auto py-5">
+                <input placeholder="Search By Product Name" onkeyup="searchProducts(this.value)" class="form-control">
+            </div>
+
+
+
+            <table class="table text-center">
+                <thead>
+    
+                    <th>Name </th>
+                    <th>Price </th>
+                    <th>Category </th>
+                    <th>Desc </th>
+                    <th>Update </th>
+                    <th>Delete </th>
+                </thead>
+    
+                <tbody id="tableBody">
+                
+                </tbody>
+    
+            </table>
+        </div>
+    
+    
+    
+    
+
+
+        <script src="first.js"></script>
+    </body>
+</html>
